@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<title></title>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1 id="title">
+					COVID-19 DECLARATION
+				</h1>
+				<p id="description">
+					Importance notice and agreement: 
+					<div>
+						The context of the recorded developments starting January 2020 regarding the infection with the new coronvirus COVID-19, in order to remain in Romania, all passengers are required to fill in the following questionaire.
+					</div>
+				</p>
+			</header>
+			
+			<form id="survey-form" class="flex-vertical">
+
+				<div class="flex-in-linie">
+					<div class="flex-vertical">
+							<label for="name" id="name-label">Name</label>
+							<input type="text" name="name" id="name" placeholder="Please enter your name" required>
+					</div>
+					<div class="flex-vertical">
+							<label for="surname" id="surname-label">Surname</label>
+							<input type="text" name="Surname" id="surname" placeholder="Please enter your surname" required>
+					</div>
+				</div >
+
+				<br>
+
+				<div class="flex-in-linie">
+					<div class="flex-vertical">
+						<label for="number" id="number-label">Age</label>
+						<input type="number" name="age" id="number" min="12" max="150" minlength="2" placeholder="Please enter your age" required>
+					</div>
+					<div class="flex-vertical">
+						<label for="country">Country of departure</label>
+						<input type="text" name="Country" id="country" placeholder="Could be different than your home country" required>
+					</div>
+				</div>
+
+				<br>
+				
+
+				<div class="flex-in-linie">
+					<div class="flex-vertical">
+						<div>
+							<label for="terminal">Arrival Terminal</label>
+						</div>
+						<div>
+							<select id="dropdown">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</select>
+						</div>
+					</div>
+					<div class="flex-vertical">
+						<div>
+							<label for="date">Date of arrival</label>
+						</div>
+						<div>
+							<input type="date" name="date" id="date" required>
+						</div>
+					</div>
+				</div>
+				
+				<br>
+
+				
+				<div>
+					<p>During my stay/travel to Romania I can be reached at:</p>
+					<label for="tel" id="tel-label">Telephone:</label>
+					<input type="tel" name="tel" id="tel" placeholder="Please add country prefix" minlength="11" required>
+					<label for="email" id="email-label">E-mail adress:</label>
+					<input type="email" name="Email" id="email" placeholder="Enter your email" required>
+				</div>
+
+
+
+				<ol>
+					<li>
+						<div>
+							<p>Have you lived in/visited areas where there were perons suffering from the infection with the new coronavirus (COVID-19)?</p>
+								<div class="yes_or_no">
+									<div class="yes_or_no_answ">
+										<label >
+											Yes
+										</label>
+									</div>
+									<div class="yes_or_no_answ">
+										<input type="radio" name="question1" value="yes">
+									</div>
+									<div class="yes_or_no_answ">
+										<label >
+											No
+										</label>
+									</div>
+									<div class="yes_or_no_answ">
+										<input type="radio" name="question1" value="no">
+									</div>
+									
+									
+									
+
+								</div>
+						</div>
+					</li>
+					<li>
+						<div>
+							<p>Have you come in direct contact with persons suffering from the infection with the new coronavirus(COVID-19) at work, nerby your residence or when visiting medical units in the last 14 days?</p>
+							<div class="yes_or_no">
+								<div class="yes_or_no_answ">
+									<label >
+										Yes
+									</label>
+								</div>
+								<div class="yes_or_no_answ">
+									<input type="radio" name="question2" value="yes">
+								</div>
+								<div class="yes_or_no_answ">
+									<label >
+										No
+									</label>
+								</div>
+								<div class="yes_or_no_answ">
+									<input type="radio" name="question2" value="no">
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div>
+							<p>Have you been hospitalized during the last three weeks?</p>
+							<div class="yes_or_no">
+								<div class="yes_or_no_answ">
+									<label >
+										Yes
+									</label>
+								</div>
+								<div class="yes_or_no_answ">
+									<input type="radio" name="question3" value="yes">
+								</div>
+								<div class="yes_or_no_answ">
+									<label >
+										No
+									</label>
+								</div>
+								<div class="yes_or_no_answ">
+									<input type="radio" name="question3" value="no">
+								</div>
+
+							</div>
+						</div>
+					</li>
+					<li>
+						<div>
+							<label>Have you had one or more of the following symptoms?</label>
+							<table>
+								 <tbody>
+									<tr>
+										<td class="question">
+											Fever
+										</td>
+										<td class="yes_no">
+											
+											<span><label class="checkbox_left">Yes</label><input class="checkbox_left" type="checkbox" name="Fever" value="yes"></span>
+										</td>
+										<td class="yes_no">
+											<label class="checkbox_left">No</label>
+											<input class="checkbox_left" type="checkbox" name="Fever" value="no">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Difficulty in swallowing
+										</td>
+										<td>
+											<label class="checkbox_left">Yes</label>
+											<input class="checkbox_left" type="checkbox" name="Fever" value="yes">
+										</td>
+										<td>
+											<label class="checkbox_left">No</label>
+											<input class="checkbox_left" type="checkbox" name="Fever" value="no">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Difficulty in breathing
+										</td>
+										<td>
+											<label class="checkbox_left">Yes</label>
+											<input class="checkbox_left" type="checkbox" name="Fever" value="yes">
+										</td>
+										<td>
+											<label class="checkbox_left">No</label>
+											<input class="checkbox_left" type="checkbox" name="Fever" value="no">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Intense coughing
+										</td>
+										<td>
+											<label class="checkbox_left">Yes</label>
+											<input class="checkbox_left" type="checkbox" name="Fever" value="yes">
+										</td>
+										<td>
+											<label class="checkbox_left">No</label>
+											<input class="checkbox_left" type="checkbox" name="Fever" value="no">
+										</td>
+									</tr>
+								 </tbody>
+							</table>
+						</div>
+					</li>
+				</ol>
+<br>
+<br>
+<br>
+
+				<div>
+					<div>
+						<label>Please let us know if you have any other symptoms COVID-19 related:</label>
+						<br>
+						<br>
+						<textarea id="w3review" name="w3review" rows="4" cols="50"> Please fill with relevant medical information only</textarea>
+					</div>
+					
+					<p id="fineprint">
+						I am aware that the refusal to fill this questionaire may cause the refusal of my entry in Romania in order to eliminate any threats to the public health in Romania. I hereby declare, on my own responsability, that I will follow the instructions provided by the medical personnel during the border control. I agrre that the provided information can be consulteed and processed but the competent authorities. Completed today 
+						<script> document.write(new Date().toLocaleDateString()); </script>.
+					</p>
+					
+						
+					
+					<input type="submit" value="Submit" id="submit">
+
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
